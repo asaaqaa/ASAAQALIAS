@@ -30,7 +30,7 @@ class Config(object):
     TZ = os.environ.get("TZ", "Asia/Baghdad")
     # set this with required zed repo link
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/asaaqaa/Zelzal"
+        "UPSTREAM_REPO", "https://github.com/asaaqaa/ASAAQALIAS"
     )
     # External plugins repo
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
@@ -88,7 +88,7 @@ class Config(object):
     # set this will channel id of your custom plugins
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL") or 0)
     # set this value with your required name for telegraph plugin
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "ZThon")
+    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "ASAAQ")
     # for custom thumb image set this with your required thumb telegraoh link
     THUMB_IMAGE = os.environ.get(
         "THUMB_IMAGE", "https://telegra.ph/file/c91c09fb188f0f281e628.jpg"
@@ -178,7 +178,7 @@ class Config(object):
     COUNTRY = str(os.environ.get("COUNTRY", ""))
     TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
     # For updater plugin
-    UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "master")
+    UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "AsAs")
     # dont touch this at all
     SUDO_USERS: Set[int] = set()
     ZEDUBLOGO = None
@@ -190,7 +190,7 @@ class Config(object):
     if OLDZED_REPO and not url(OLDZED_REPO):
         OLDZED_REPO = "https://github.com/asaaqaa/ZED_USERBOT"
     OLDZED_REPOBRANCH = os.environ.get("OLDZED_REPOBRANCH", "oldzed")
-    VC_REPO = os.environ.get("VC_REPO", "https://github.com/asaaqaa/ZVCPlayer")
+    VC_REPO = os.environ.get("VC_REPO", "https://github.com/Zed-Thon/ZVCPlayer")
     VC_REPOBRANCH = os.environ.get("VC_REPOBRANCH", "beta")
 
 class Production(Config):
