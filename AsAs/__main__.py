@@ -21,7 +21,7 @@ from .utils import (
 LOGS = logging.getLogger("ASAAQALIAS")
 cmdhr = Config.COMMAND_HAND_LER
 
-print(zthon.__copyright__)
+print(AsAs.__copyright__)
 print(f"المرخصة بموجب شروط  {AsAs.__license__}")
 
 cmdhr = Config.COMMAND_HAND_LER
