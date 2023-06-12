@@ -1,8 +1,8 @@
 import contextlib
 import sys
 
-import zthon
-from zthon import BOTLOG_CHATID, PM_LOGGER_GROUP_ID
+import AsAs
+from AsAs import BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 
 from .Config import Config
 from .core.logger import logging
@@ -18,11 +18,11 @@ from .utils import (
 )
 
 
-LOGS = logging.getLogger("Zelzal")
+LOGS = logging.getLogger("ASAAQALIAS")
 cmdhr = Config.COMMAND_HAND_LER
 
 print(zthon.__copyright__)
-print(f"المرخصة بموجب شروط  {zthon.__license__}")
+print(f"المرخصة بموجب شروط  {AsAs.__license__}")
 
 cmdhr = Config.COMMAND_HAND_LER
 
