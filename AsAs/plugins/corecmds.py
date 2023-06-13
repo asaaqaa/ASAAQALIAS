@@ -31,7 +31,7 @@ async def install(event):
     "لـ تنصيب ملفـات اضافيـه."
     ASAAQALIAS = event.sender_id
     zed_dev = (1895219306, 925972505, 5176749470, 5280339206)
-    if zelzal not in zed_dev:
+    if ASAAQALIAS not in zed_dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     if event.reply_to_msg_id:
         try:
@@ -72,7 +72,7 @@ async def load(event):
     "لـ تحميـل اي ملف مجـدداً .. اذا كنت قد الغيت تحميله مسبقـاً"
     ASAAQALIAS = event.sender_id
     zed_dev = (1895219306, 925972505, 5176749470, 5280339206)
-    if zelzal not in zed_dev:
+    if ASAAQALIAS not in zed_dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     shortname = event.pattern_match.group(1)
     try:
