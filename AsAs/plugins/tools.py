@@ -14,7 +14,7 @@ from PIL import Image, ImageColor
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.contacts import UnblockRequest as unblock
 
-from zthon import zedub
+from AsAs import zedub
 
 from ..Config import Config
 from ..core.logger import logging
