@@ -15,7 +15,7 @@ from telethon.errors import UserAdminInvalidError
 from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 
-from zthon import zedub
+from AsAs import zedub
 
 from ..Config import Config
 from ..core.logger import logging
@@ -34,9 +34,9 @@ spam_chats = []
 #                           الملـــف كتـــابـــة مـــن الصفـــر - T.me/ZedThon                           #
 # =========================================================== #
 Warn = "تخمـط بـدون ذكـر المصـدر - ابلعــك نعــال وراح اهينــك"
-ZEDTHON_BEST_SOURCE = "[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة خـاص 🚹](t.me/ZedThon) .\n\n**- جـارِ الاذاعـه خـاص لـ أعضـاء الكـروب 🛗\n- الرجـاء الانتظـار .. لحظـات ⏳**"
-ZEDTHON_PRO_SOURCE = "[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/ZedThon) .\n\n**- جـارِ الاذاعـه لـ قائمـة زاجـل 📜\n- الرجـاء الانتظـار .. لحظـات ⏳**"
-ZELZAL_PRO_DEV = "[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/ZedThon) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎قائمـة الاذاعـه فارغـه ؟! ❌**\n**⎉╎قم باضافة يوزرات عبـر الامر**\n`.اضف زاجل` **بالـرد ع عدة يوزرات تفصل بينهم مسافات**"
+ZEDTHON_BEST_SOURCE = "[ᯓ الامبراطور 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة خـاص 🚹](t.me/A_S_A_S_W) .\n\n**- جـارِ الاذاعـه خـاص لـ أعضـاء الكـروب 🛗\n- الرجـاء الانتظـار .. لحظـات ⏳**"
+ZEDTHON_PRO_SOURCE = "[ᯓ الامبراطور 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/kapo00s) .\n\n**- جـارِ الاذاعـه لـ قائمـة زاجـل 📜\n- الرجـاء الانتظـار .. لحظـات ⏳**"
+ZELZAL_PRO_DEV = "[ᯓ الامبراطور 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊]t.me/kapo00s) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎قائمـة الاذاعـه فارغـه ؟! ❌**\n**⎉╎قم باضافة يوزرات عبـر الامر**\n`.اضف زاجل` **بالـرد ع عدة يوزرات تفصل بينهم مسافات**"
 # =========================================================== #
 #                                      زلـــزال الهيبـــه - T.me/zzzzl1l                                  #
 # =========================================================== #
@@ -51,7 +51,7 @@ async def malath(event):
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
     elif event.is_reply:
-        zilzal = await event.get_reply_message()
+        ASAAQALIAS = await event.get_reply_message()
     else:
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
@@ -62,7 +62,7 @@ async def malath(event):
     except UserNotParticipantError:
         pass
     spam_chats.append(chat_id)
-    zelzal = await event.edit(ZEDTHON_BEST_SOURCE, link_preview=False)
+    ASAAQALIAS = await event.edit(ZEDTHON_BEST_SOURCE, link_preview=False)
     total = 0
     success = 0
     async for usr in event.client.iter_participants(event.chat_id):
@@ -84,15 +84,15 @@ async def malath(event):
             try:
                 await borg.send_file(
                     magtxt,
-                    zilzal,
+                    ASAAQALIAS,
                     caption=zilzal.caption,
                     link_preview=False,
                 )
                 success += 1
             except BaseException:
                 return
-    ZELZAL_BEST_DEV = f"[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة خـاص 🚹](t.me/ZedThon) .\n\n**⎉╎تمت الاذاعـه لـ اعضـاء الكـروب .. بنجـاح  ✅**\n**⎉╎عـدد {success} عضـو**"
-    await zelzal.edit(ZELZAL_BEST_DEV, link_preview=False)
+    ZELZAL_BEST_DEV = f"[ᯓ الامبراطور 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة خـاص 🚹](t.me/A_S_A_S_W) .\n\n**⎉╎تمت الاذاعـه لـ اعضـاء الكـروب .. بنجـاح  ✅**\n**⎉╎عـدد {success} عضـو**"
+    await ASAAQALIAS.edit(ZELZAL_BEST_DEV, link_preview=False)
     try:
         spam_chats.remove(chat_id)
     except:
@@ -121,39 +121,39 @@ async def malath(event):
     if zedthon:
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
-    zilzal = await event.get_reply_message()
+    ASAAQALIAS = await event.get_reply_message()
     if gvarstatus("ZAGL_Zed") is None:
         return await event.edit(ZELZAL_PRO_DEV, link_preview=False)
-    zelzal = gvarstatus("ZAGL_Zed")
-    users = zelzal.split(" ")
+    ASAAQALIAS = gvarstatus("ZAGL_Zed")
+    users = ASAAQALIAS.split(" ")
     zzz = await event.edit(ZEDTHON_PRO_SOURCE, link_preview=False)
     total = 0
     success = 0
     user_entity = None
     for user in users:
         total += 1
-        if zilzal.text:
+        if ASAAQALIAS.text:
             try:
                 user_entity = await zedub.get_entity(user)
                 if user_entity.bot or user_entity.deleted:
                     continue
-                await zedub.send_message(user_entity.id, zilzal, link_preview=False)
+                await zedub.send_message(user_entity.id, ASAAQALIAS, link_preview=False)
                 success += 1
             except UserAdminInvalidError:
                 pass
             except Exception as e:
                 zzz.edit(f"خطأ في إرسال الرسالة إلى {user_entity.id}: {str(e)}")
-        elif zilzal.media:
+        elif ASAAQALIAS.media:
             try:
                 user_entity = await zedub.get_entity(user)
                 if user_entity.bot or user_entity.deleted:
                     continue
-                await zedub.send_file(user_entity.id, zilzal.media, caption=zilzal.text)
+                await zedub.send_file(user_entity.id, ASAAQALIAS.media, caption=ASAAQALIAS.text)
                 success += 1
             except UserAdminInvalidError:
                 pass
             except Exception as e:
                 zzz.edit(f"خطأ في إرسال الرسالة إلى {user_entity.id}: {str(e)}")
-    ZELZAL_BEST_DEV = f"[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/ZedThon) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎تمت الاذاعـه .. بنجـاح  ✅**\n**⎉╎عـدد {success} أشخـاص**"
+    ZELZAL_BEST_DEV = f"[ᯓ  𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/kapo00s) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎تمت الاذاعـه .. بنجـاح الامبراطور  ✅**\n**⎉╎عـدد {success} أشخـاص**"
     await zzz.edit(ZELZAL_BEST_DEV, link_preview=False)
 
