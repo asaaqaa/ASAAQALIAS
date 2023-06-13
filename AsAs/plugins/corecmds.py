@@ -14,7 +14,7 @@ thumb_image_path = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg"
 
 
 def plug_checker(plugin):
-    plug_path = f"./zthon/plugins/{plugin}.py"
+    plug_path = f"./AsAs/plugins/{plugin}.py"
     return plug_path
 
 
@@ -23,13 +23,13 @@ def plug_checker(plugin):
     command=("نصب", plugin_category),
     info={
         "header": "لـ تنصيب ملفـات اضافيـه.",
-        "الوصـف": "بالـرد ع اي ملف (يدعم سورس زدثــون) لـ تنصيبه في بوتك.",
+        "الوصـف": "بالـرد ع اي ملف (يدعم سورس الامبراطور) لـ تنصيبه في بوتك.",
         "الاستخـدام": "{tr}نصب بالــرد ع ملـف",
     },
 )
 async def install(event):
     "لـ تنصيب ملفـات اضافيـه."
-    zelzal = event.sender_id
+    ASAAQALIAS = event.sender_id
     zed_dev = (1895219306, 925972505, 5176749470, 5280339206)
     if zelzal not in zed_dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
@@ -37,7 +37,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(
                 await event.get_reply_message(),
-                "zthon/plugins/",
+                "AsAs/plugins/",
             )
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)
@@ -70,7 +70,7 @@ async def install(event):
 )
 async def load(event):
     "لـ تحميـل اي ملف مجـدداً .. اذا كنت قد الغيت تحميله مسبقـاً"
-    zelzal = event.sender_id
+    ASAAQALIAS = event.sender_id
     zed_dev = (1895219306, 925972505, 5176749470, 5280339206)
     if zelzal not in zed_dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
@@ -98,9 +98,9 @@ async def load(event):
 )
 async def send(event):
     "لـ تحميـل وجلب اي ملف من ملفـات السـورس اليك ع تيليجـرام"
-    zelzal = event.sender_id
+    ASAAQALIAS = event.sender_id
     zed_dev = (1895219306, 925972505, 5176749470, 5280339206)
-    if zelzal not in zed_dev:
+    if ASAAQALIAS not in zed_dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     reply_to_id = await reply_id(event)
     thumb = thumb_image_path if os.path.exists(thumb_image_path) else None
@@ -133,9 +133,9 @@ async def send(event):
 )
 async def unload(event):
     "لـ الغـاء تحميـل اي ملـف من السـورس."
-    zelzal = event.sender_id
+    ASAAQALIAS = event.sender_id
     zed_dev = (1895219306, 925972505, 5176749470, 5280339206)
-    if zelzal not in zed_dev:
+    if ASAAQALIAS not in zed_dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     shortname = event.pattern_match.group(1)
     try:
@@ -158,9 +158,9 @@ async def unload(event):
 )
 async def unload(event):
     "لـ الغـاء تنصيب اي ملـف من السـورس."
-    zelzal = event.sender_id
+    ASAAQALIAS = event.sender_id
     zed_dev = (1895219306, 925972505, 5176749470, 5280339206)
-    if zelzal not in zed_dev:
+    if ASAAQALIAS not in zed_dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     shortname = event.pattern_match.group(1)
     path = plug_checker(shortname)
@@ -199,9 +199,9 @@ async def unload(event):
 )
 async def unload(event):
     "لـ الغـاء تنصيب اي ملـف من السـورس."
-    zelzal = event.sender_id
+    ASAAQALIAS = event.sender_id
     zed_dev = (1895219306, 925972505, 5176749470, 5280339206)
-    if zelzal not in zed_dev:
+    if ASAAQALIAS not in zed_dev:
         return await edit_delete(event, "**- عـذࢪاً .. عـزيـزي ؟!**\n**- هـذا الامـࢪ خاص بمطـوࢪ السـوࢪس**", 10)
     shortname = event.pattern_match.group(1)
     path = plug_checker(shortname)
