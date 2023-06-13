@@ -1,9 +1,9 @@
-# ZedThon - zthon
+# ZedThon - AsAs
 # Copyright (C) 2022 ZedThon . All Rights Reserved
-#< https://t.me/ZedThon >
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+#< https://t.me/kapo00s >
+# This file is a part of < https://github.com/aşaaqaa/ASAAQALIAS/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
+# <https://www.github.com/asaaqaa/ASAAQALIAS/blob/AsAs/LICENSE/>.
 
 import asyncio
 import glob
@@ -16,7 +16,7 @@ from pathlib import Path
 from telethon import Button, functions, types, utils
 from telethon.tl.functions.channels import JoinChannelRequest
 
-from zthon import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
+from AsAs import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 
 from ..Config import Config
 from ..core.logger import logging
@@ -82,7 +82,7 @@ async def startupmessage():
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/f821d27af168206b472ad.mp4",
-                caption="**•⎆┊تـم بـدء تشغـيل سـورس زدثــون الخاص بك .. بنجاح 🧸♥️**",
+                caption="**•⎆┊تـم بـدء تشغـيل سـورس الامبراطور  الخاص بك .. بنجاح 🧸♥️**",
                 buttons=[(Button.url("𝙕𝙀𝘿𝙏𝙝𝙤𝙣𓅛", "https://t.me/ZedThon"),)],
             )
     except Exception as e:
