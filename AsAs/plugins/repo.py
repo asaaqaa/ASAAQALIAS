@@ -1,9 +1,9 @@
 # Zed-Thon
 # Copyright (C) 2023 Zed-Thon . All Rights Reserved
 #
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+# This file is a part of < https://github.com/asaaqaa/ASAAQALIAS/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
+# <https://www.github.com/asaaqaa/ASAAQALIAS/blob/AsAs/LICENSE/>.
 
 import base64
 import contextlib
