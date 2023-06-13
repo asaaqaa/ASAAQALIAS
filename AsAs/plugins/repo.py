@@ -34,10 +34,10 @@ REPO_NOT_FOUND = "<b>⎉╎عـذراً .. لـم استطـع ايجـاد ال
 # =========================================================== #
 
 
-#Write Code By T.me/zzzzl1l
+#Write Code By T.me/A_S_A_S_W
 @zedub.zed_cmd(pattern="repo(?:\s|$)([\s\S]*)")
 async def zelzal2(event):
-    zelzal = event.pattern_match.group(1)
+    ASAAQALIAS = event.pattern_match.group(1)
     chat = "@GitHub_Download_robot"
     reply_id_ = await reply_id(event)
     zedthon = await edit_or_reply(event, REPO_SEARCH_STRING, parse_mode="html")
@@ -45,12 +45,12 @@ async def zelzal2(event):
         try:
             await conv.send_message("/start")
             await conv.get_response()
-            purgeflag = await conv.send_message(zelzal)
+            purgeflag = await conv.send_message(ASAAQALIAS)
         except YouBlockedUserError:
             await zedub(unblock("GitHub_Download_robot"))
             await conv.send_message("/start")
             await conv.get_response()
-            purgeflag = await conv.send_message(zelzal)
+            purgeflag = await conv.send_message(ASAAQALIAS)
         repo = await conv.get_response()
         await event.client.send_read_acknowledge(conv.chat_id)
         if not repo.document:
@@ -59,7 +59,7 @@ async def zelzal2(event):
         await event.client.send_file(
             event.chat_id,
             repo,
-            caption=f"<b>⎉╎الريبـو :- <code>{zelzal}</code></b>\n<b>⎉╎تم التحميـل بواسطـة زدثــون :- @ZedThon</b>",
+            caption=f"<b>⎉╎الريبـو :- <code>{zelzal}</code></b>\n<b>⎉╎تم التحميـل بواسطـة زدثــون :- @kapo00s</b>",
             parse_mode="html",
             reply_to=reply_id_,
         )
