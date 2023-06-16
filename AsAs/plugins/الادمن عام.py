@@ -40,10 +40,10 @@ UNBAN_RIGHTS = ChatBannedRights(
     embed_links=None,
 )
 
-zel_dev = (5176749470, 5426390871)
+zel_dev = (6218149232, 6126535154)
 
 
-@zedub.zed_cmd(
+@start.zed_cmd(
     pattern="ح عام(?:\s|$)([\s\S]*)",
     command=("gban", plugin_category),
     info={
