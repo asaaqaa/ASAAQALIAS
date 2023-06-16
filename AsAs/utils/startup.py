@@ -16,7 +16,7 @@ from pathlib import Path
 from telethon import Button, functions, types, utils
 from telethon.tl.functions.channels import JoinChannelRequest
 
-from AsAs import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
+from zthon import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 
 from ..Config import Config
 from ..core.logger import logging
