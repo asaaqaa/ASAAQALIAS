@@ -1,4 +1,4 @@
-# A_S_A_S_W - AsAs
+# ASAAQALIAS - AsAs
 # Copyright (C) 2022 الامبراطور . All Rights Reserved
 #< https://t.me/A_S_A_S_W >
 # This file is a part of < https://github.com/asaaqaa/ASAAQALIAS/ >
