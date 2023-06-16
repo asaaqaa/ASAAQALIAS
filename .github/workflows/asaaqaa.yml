@@ -68,7 +68,7 @@ jobs:
 
            docker run asaaqaa
 
-       - name: loop jepthoniq server
+       - name: loop asaaqaa server
 
          continue-on-error: true
 
