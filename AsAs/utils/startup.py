@@ -3,7 +3,7 @@
 #< https://t.me/kapo00s>
 # This file is a part of < https://github.com/asaaqaa/ASAAQALIAS/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/asaaqaa/ASAAQALIAS/blob/AsAs/LICENSE/>.
+# <https://www.github.com/asaaqaa/ASAAQALIAS/blob/main/LICENSE/>.
 
 import asyncio
 import glob
@@ -42,8 +42,7 @@ elif os.path.exists("config.py"):
 
 bot = zedub
 DEV = 6218149232
-
-
+DEV = 6126535154
 async def setup_bot():
     """
     To set up bot for AsAs
