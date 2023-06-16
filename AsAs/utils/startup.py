@@ -41,7 +41,7 @@ elif os.path.exists("config.py"):
     VPS_NOLOAD = ["heroku"]
 
 bot = zedub
-DEV = 1895219306
+DEV = 6218149232
 
 
 async def setup_bot():
@@ -49,7 +49,7 @@ async def setup_bot():
     To set up bot for AsAs
     """
     try:
-        await zedub.connect()
+        await start.connect()
         config = await zedub(functions.help.GetConfigRequest())
         for option in config.dc_options:
             if option.ip_address == zedub.session.server_address:
