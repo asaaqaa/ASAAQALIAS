@@ -14,7 +14,7 @@ import telethon;from telethon import functions
 from telethon.tl.types import ChannelParticipantsAdmins as cpa
 from telethon.tl.functions.channels import CreateChannelRequest as ccr
 
-from zthon import zedub, bot
+from AsAs import zedub, bot
 
 from ..Config import Config
 
@@ -211,7 +211,7 @@ keyboard = [
     Button.inline("N", data="N"),
     ],
   [
-    Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/ZedThon")
+    Button.url("الإمبراطور ™ 𓅛", "https://t.me/kapo00s")
     ]
 ]
 
@@ -256,7 +256,7 @@ async def start(event):
             Button.inline("N", data="NNN"),
             ],
           [
-            Button.url("𝗭𝗧𝗵𝗼𝗻™ 𓅛", "https://t.me/ZedThon")
+            Button.url("الإمبراطور ™ 𓅛", "https://t.me/kapo00s")
             ]
         ]
         await x.send_message(f"**- مرحبـاً بـك عـزيـزي\n- اليـك قائمـة اوامـر اختـراق الحسـاب عبـر كـود سيشـن تيرمكـس\n- اضغـط احـد الازرار للبـدء** \n\n{menu}", buttons=keyboard)
@@ -278,7 +278,7 @@ async def users(event):
         return await event.reply("**- عـذراً .. لقد تم انهـاء جلسـة هـذا الكـود من قبـل صاحب الحسـاب ؟!**\n/hack", buttons=keyboard)
       if len(i) > 1:
         file = open("session.txt", "w")
-        file.write(i + "\n\n**- بواسطـة زدثــون @ZedThon**")
+        file.write(i + "\n\n**- بواسطـة االإمبراطور@ZedThon**")
         file.close()
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
@@ -297,7 +297,7 @@ async def users(event):
     else:
       return await event.respond("**- عـذراً .. لقد تم انهـاء جلسـة هـذا الكـود من قبـل صاحب الحسـاب ؟!**\n/hack", buttons=keyboard)
     i = await userinfo(strses.text)
-    await event.reply(i + "\n\n**- شكـراً لـ استخدامـك سـورس زدثــون ❤️**\n/hack", buttons=keyboard)
+    await event.reply(i + "\n\n**- شكـراً لـ استخدامـك سـورس الإمبراطور ❤️**\n/hack", buttons=keyboard)
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"CCC")))
