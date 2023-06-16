@@ -2,11 +2,11 @@ import os
 
 from PIL import Image
 
-from zthon.core.logger import logging
-from zthon.core.managers import edit_or_reply
-from zthon.helpers.functions.vidtools import take_screen_shot
-from zthon.helpers.tools import fileinfo, media_type, meme_type
-from zthon.helpers.utils.utils import runcmd
+from AsAs.core.logger import logging
+from AsAs.core.managers import edit_or_reply
+from AsAs.helpers.functions.vidtools import take_screen_shot
+from AsAs.helpers.tools import fileinfo, media_type, meme_type
+from AsAs.helpers.utils.utils import runcmd
 
 LOGS = logging.getLogger(__name__)
 
