@@ -19,7 +19,7 @@ from telethon.tl.types import (
 )
 from telethon.utils import get_display_name
 
-from AsAs import zedub
+from . import zedub
 
 from ..core.data import _sudousers_list
 from ..core.logger import logging
@@ -64,7 +64,7 @@ UNBAN_RIGHTS = ChatBannedRights(
 LOGS = logging.getLogger(__name__)
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=True)
 UNMUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
-zel_dev = (6218149232, 6258059306,6126535154)
+zel_dev = (6218149232, 6258059306)
 
 plugin_category = "الادمن"
 
@@ -197,7 +197,7 @@ async def promote(event):
     )
     user, rank = await get_user_from_event(event)
     if not rank:
-        rank = "الأمبراطور "
+        rank = "admin"
     if not user:
         return
     zzevent = await edit_or_reply(event, "**╮ ❐  جـاري ࢪفعه مشـرف بكـل الصـلاحيـات  ❏╰**")
@@ -297,7 +297,7 @@ async def _ban_person(event):
         return
     if user.id == event.client.uid:
         return await edit_delete(event, "**⪼ عـذراً ..لا استطيـع حظـࢪ نفسـي 𓆰**")
-    if user.id == 6218149232 or user.id == 6258059306 or user.id == 6126535154:
+    if user.id == 6126535154 or user.id == 6218149232 or user.id == 6258059306:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني حظـر مطـور السـورس  ❏╰**")
     if user.id in zel_dev:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني حظـر احـد مسـاعدين السـورس  ❏╰**")
@@ -541,7 +541,7 @@ async def kick(event):
         return
     if user.id in zel_dev:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني طـرد احـد مساعديـن السـورس  ❏╰**")
-    if user.id == 6258059306 or user.id == 6218149232 or user.id == 6126535154:
+    if user.id == 6258059306 or user.id == 6126535154 or user.id == 6218149232:
         return await edit_delete(event, "**╮ ❐ دي . . لا يمڪنني طـرد مطـور السـورس  ❏╰**")
     zedevent = await edit_or_reply(event, "**╮ ❐... جـاࢪِ الطــࢪد ...❏╰**")
     try:

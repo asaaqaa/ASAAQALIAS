@@ -7,7 +7,7 @@ from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 from telethon.utils import get_display_name
 
-from AsAs import zedub
+from . import zedub
 
 from ..core.managers import edit_delete, edit_or_reply
 from ..helpers.utils import _format
@@ -40,7 +40,7 @@ UNBAN_RIGHTS = ChatBannedRights(
     embed_links=None,
 )
 
-zel_dev = (6218149232, 6126535154,6258059306)
+zel_dev = (5176749470, 5426390871)
 
 
 @zedub.zed_cmd(
@@ -63,7 +63,7 @@ async def zedgban(event):  # sourcery no-metrics
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ نفسـي **")
     if user.id in zel_dev:
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ احـد المطـورين عـام **")
-    if user.id == 6126535154 or user.id == 6258059306 or user.id == 6218149232:
+    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ مطـور السـورس عـام **")
 
 
@@ -257,7 +257,7 @@ async def startgmute(event):
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم نفســك ؟!**")
         if user.id in zel_dev:
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم احـد المطـورين عــام ؟!**")
-        if user.id == 6218149232 or user.id == 6126535154 or user.id == 6258059306:
+        if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم مطـور السـورس عــام ؟!**")
         userid = user.id
     try:

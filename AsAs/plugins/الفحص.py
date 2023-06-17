@@ -13,7 +13,7 @@ from telethon.errors.rpcerrorlist import (
 )
 from telethon.events import CallbackQuery
 
-from AsAs import StartTime, zedub, zedversion
+from . import StartTime, zedub, zedversion
 
 from ..Config import Config
 from ..core.managers import edit_or_reply
@@ -36,7 +36,7 @@ async def amireallyalive(event):
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     Z_EMOJI = gvarstatus("ALIVE_EMOJI") or "✥┊"
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** بـوت  الإمبراطور  𝙕𝞝𝘿𝙏𝙃𝙊𝙉  يعمـل .. بنجـاح ☑️ 𓆩 **"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** بـوت  𝞝♡𝞝𝞝♡𝞝 الإمبراطور 𝞝يعمـل .. بنجـاح ☑️ 𓆩 **"
     ZED_IMG = gvarstatus("ALIVE_PIC")
     zed_caption = gvarstatus("ALIVE_TEMPLATE") or zed_temp
     caption = zed_caption.format(
@@ -74,11 +74,11 @@ zed_temp = """{ALIVE_TEXT}
 
 **{Z_EMOJI} قاعدۿ البيانات :** تعمل بنـجاح
 **{Z_EMOJI} إصـدار التـيليثون :** `{telever}`
-**{Z_EMOJI} إصـدار الإمبراطور  :** `{zdver}`
+**{Z_EMOJI} إصـدار 𝞝 الإمبراطور 𝞝 :** `{zdver}`
 **{Z_EMOJI} إصـدار البـايثون :** `{pyver}`
 **{Z_EMOJI} الوقـت :** `{uptime}`
 **{Z_EMOJI} المسـتخدم:** {mention}
-**{Z_EMOJI} قنـاة السـورس :** [اضغـط هنـا](https://t.me/kapo00s )"""
+**{Z_EMOJI} قنـاة السـورس :** [اضغـط هنـا](https://t.me/ZThon)"""
 
 
 @zedub.zed_cmd(
@@ -95,9 +95,9 @@ async def amireallyialive(event):
     "A kind of showing bot details by your inline bot"
     reply_to_id = await reply_id(event)
     Z_EMOJI = gvarstatus("ALIVE_EMOJI") or "✥┊"
-    zed_caption = "** بـوت  الإمبراطور  𝙕𝞝𝘿𝙏𝙃𝙊𝙉  يعمـل .. بنجـاح ☑️ 𓆩 **\n"
+    zed_caption = "** بـوت  𝞝♡𝞝𝞝♡𝞝 الإمبراطور 𝞝يعمـل .. بنجـاح ☑️ 𓆩 **\n"
     zed_caption += f"**{Z_EMOJI} إصـدار التـيليثون :** `{version.__version__}\n`"
-    zed_caption += f"**{Z_EMOJI} إصـدار الإمبراطور  :** `{zedversion}`\n"
+    zed_caption += f"**{Z_EMOJI} إصـدار 𝞝 الإمبراطور 𝞝 :** `{zedversion}`\n"
     zed_caption += f"**{Z_EMOJI} إصـدار البـايثون :** `{python_version()}\n`"
     zed_caption += f"**{Z_EMOJI} المسـتخدم :** {mention}\n"
     results = await event.client.inline_query(Config.TG_BOT_USERNAME, zed_caption)
