@@ -15,7 +15,7 @@ loop = None
 if Config.STRING_SESSION:
     session = bothseesion(Config.STRING_SESSION, LOGS)
 else:
-    session = "zelzal"
+    session = "ASAAQALIAS"
 
 try:
     zedub = ZedUserBotClient(
