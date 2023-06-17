@@ -27,7 +27,7 @@ StartTime = time.time()
 JEPVERSION = "3.1.3"
 
 
-if Config.UPSTREAM_REPO == "asaaqaa":
+if Config.UPSTREAM_REPO == "zel":
     UPSTREAM_REPO_URL = "https://github.com/asaaqaa/ASAAQALIAS"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
