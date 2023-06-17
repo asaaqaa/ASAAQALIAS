@@ -5,6 +5,12 @@ import heroku3
 from .Config import Config
 from .core.logger import logging
 from .core.session import zedub
+from .Config import Config
+from .core.logger import logging
+from .core.session import zedub
+from .helpers.functions.converter import Convert
+from .helpers.functions.musictool import *
+from .helpers.utils.utils import runasync
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.1.1"
