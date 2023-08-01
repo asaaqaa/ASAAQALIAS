@@ -12,7 +12,7 @@ from telethon.errors import QueryIdInvalidError
 from telethon.events import CallbackQuery, InlineQuery
 from youtubesearchpython import VideosSearch
 
-from Reed import zedub
+from AsAs import zedub
 
 from ..Config import Config
 from ..helpers.functions import rand_key
@@ -71,7 +71,7 @@ async def inline_handler(event):  # sourcery no-metrics
             if match3:
                 sandy = "Chat"
                 query = query[5:]
-                info_type = ["hide", "can't", "Read Message "]
+                info_type = ["hide", "can't", "AsAs Message "]
             else:
                 sandy = ""
                 if match:
@@ -99,7 +99,7 @@ async def inline_handler(event):  # sourcery no-metrics
                     user_list.append(u.id)
                     sandy += " "
                 sandy = sandy[:-1]
-            old_msg = os.path.join("./Reed", f"{info_type[0]}.txt")
+            old_msg = os.path.join("./AsAs", f"{info_type[0]}.txt")
             try:
                 jsondata = json.load(open(old_msg))
             except Exception:
